@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>CocaCola</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row stretch">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li>
+                        <button class="navbar-toggler" onclick="toogleLabels()"><span><i class="fa fa-bars fa-1x"></i></span></button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-user-o fa-lg"></i><span class="collapse" name="linkLabel">Client</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-exchange fa-lg"></i><span class="collapse" name="linkLabel">Interaction</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-bullhorn fa-lg"></i><span class="collapse" name="linkLabel">Service
+                                request</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-history fa-lg"></i><span class="collapse" name="linkLabel">Client
+                                history</span></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-leaf fa-lg"></i><span class="collapse" name="linkLabel">GreenMile</span></a>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>Name</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-8 col-sm-5 col-md-6 col-lg-4">
+                                        <label class="text-muted" for="clientId">Title</label>
+                                        <div class="input-group input-group-sm">
+                                            <select type="text" class="form-control rounded-right">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-5 col-md-6 col-lg-4 align-self-end">
+                                        <label class="text-muted" for="clientId">Name</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" name="policyNumber"
+                                                id="policyNumber" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>Search terms</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12 col-sm-5 col-md-6 col-lg-4">
+                                        <label for="clientFirstName">Search term 1/2</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="clientFirstName"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>Street address</h5>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <div class="col-12 col-sm-5 col-md-6 col-lg-8">
+                                        <label class="text-muted" for="address">Street/House number</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="address" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-1">
+                                    <div class="col-12 col-sm-5 col-md-6 col-lg-4">
+                                        <label class="text-muted" for="city">Postal code/City</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="city" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-5 col-md-6 col-lg-4">
+                                        <label class="text-muted" for="country">Country</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="country" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-1">
+                                    <div class="col-12 col-sm-5 col-md-8 col-lg-4">
+                                        <label class="text-muted" for="phone">Region</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="phone">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-5 col-md-8 col-lg-4">
+                                        <label class="text-muted" for="email">Transportation zone</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control rounded-right" id="email" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let visibility = false;
+    function toogleLabels() {
+        visibility = !visibility;
+        let spanText = document.getElementsByName('linkLabel');
+        spanText.forEach(el => el.className = visibility == true ? 'collapse.show' : 'collapse');
+    }
+</script>
